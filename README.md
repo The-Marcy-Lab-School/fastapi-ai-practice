@@ -120,7 +120,7 @@ Start with these three todos already in memory when the server boots:
 Check your Python version. FastAPI requires **Python 3.8+** and works best on **3.10+**. In your terminal:
 
 ```bash
-python3 --version a
+python3 --version
 # Look for "Python 3.8.x" or higher
 ```
 
