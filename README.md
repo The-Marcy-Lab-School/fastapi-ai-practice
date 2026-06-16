@@ -124,15 +124,16 @@ python3 --version
 # Look for "Python 3.8.x" or higher
 ```
 
-Move into to the `server/` directory and open a second terminal to start a new session with `claude`:
+You will need two separate terminals for this exercise: one to run your server and one to run your Claude Code session.
+
+In one terminal at the root of the project, start a new session with `claude`:
 
 ```bash
-# First cd into server/
-cd server
-
-# Then open a second terminal and start a Claude session
+# Inside the root of the fastapi-ai-practice directory
 claude
 ```
+
+Then open a second terminal and move into the `server` directory to begin working.
 
 ---
 
@@ -213,7 +214,7 @@ Now you're ready to start building. Rather than building the project all at once
 
 Here a prompt that you can use to provide clear guidance to Claude on where you'd like to go and how you'd like to break down the project into smaller chunks:
 
-> Work through these in order. Don't move to the next stage until you I explain the current one to you.
+> Let's work through these in order. Before moving on to the next stage, ask me to explain the current one to you.
 
 ```md
 **Stage 1 — Get the server running and return todos**
@@ -233,6 +234,8 @@ Here a prompt that you can use to provide clear guidance to Claude on where you'
 - Log every request (method, path, timestamp)
 - Require `X-API-Key: marcy-secret` on write routes
 ```
+
+Note: Claude won't strictly enforce these stages. It'll acknowledge the instruction and then happily move on whenever you ask it to. This prompt just sets Claude's behavior, but the actual progress gate (not moving on until you can explain it) is on *you*, not on Claude.
 
 ---
 
